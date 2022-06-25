@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:enviomarilandia/config/colors.dart';
 import 'package:enviomarilandia/providers/check_out_provider.dart';
-import 'package:enviomarilandia/screens/check_out/google_map/google_map.dart';
+import 'package:enviomarilandia/telas/check_out/google_map/google_map.dart';
 import 'package:enviomarilandia/widgets/costom_text_field.dart';
 import 'package:provider/provider.dart';
 

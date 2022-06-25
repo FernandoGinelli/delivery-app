@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:enviomarilandia/comp/models/review_cart_model.dart';
+import 'package:enviomarilandia/models/review_cart_model.dart';
 
 class ReviewCartProvider with ChangeNotifier {
   void addReviewCartData({
@@ -96,7 +96,7 @@ void updateReviewCartData({
 getTotalPrice(){
   double total = 0.0;
   reviewCartDataList.forEach((element) { 
-    total += element.cartPrice * element.cartQuantity;
+    total += element.cartPrice! * element.cartQuantity!;
     
   });
   return total;

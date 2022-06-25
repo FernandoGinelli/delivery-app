@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:enviomarilandia/config/colors.dart';
 import 'package:enviomarilandia/models/review_cart_model.dart';
 import 'package:enviomarilandia/providers/wishlist_provider.dart';
-import 'package:enviomarilandia/screens/review_cart/review_cart.dart';
+import 'package:enviomarilandia/telas/review_cart/review_cart.dart';
 import 'package:enviomarilandia/widgets/count.dart';
 import 'package:provider/provider.dart';
 
@@ -37,7 +37,7 @@ class _ProductOverviewState extends State<ProductOverview> {
   }) {
     return Expanded(
       child: GestureDetector(
-        onTap: onTap!(),
+        onTap: (){onTap;},
         child: Container(
           padding: EdgeInsets.all(20),
           color: backgroundColor,

@@ -9,14 +9,14 @@ class OrderItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: Image.network(
-        e.cartImage,
+        e.cartImage!,
         width: 60,
       ),
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-           e.cartName,
+           e.cartName!,
             style: TextStyle(
               color: Colors.grey[600],
             ),

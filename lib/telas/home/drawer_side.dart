@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:enviomarilandia/config/colors.dart';
 import 'package:enviomarilandia/providers/user_provider.dart';
-import 'package:enviomarilandia/screens/home/home_screen.dart';
-import 'package:enviomarilandia/screens/my_profile/my_profile.dart';
-import 'package:enviomarilandia/screens/review_cart/review_cart.dart';
-import 'package:enviomarilandia/screens/wishList/wish_list.dart';
+import 'package:enviomarilandia/telas/home/home_screen.dart';
+import 'package:enviomarilandia/telas/my_profile/my_profile.dart';
+import 'package:enviomarilandia/telas/review_cart/review_cart.dart';
+import 'package:enviomarilandia/telas/wishList/wish_list.dart';
 
 class DrawerSide extends StatefulWidget {
   UserProvider userProvider;

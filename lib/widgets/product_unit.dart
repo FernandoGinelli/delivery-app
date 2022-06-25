@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ProductUnit extends StatelessWidget {
-  final Function onTap;
-  final String title;
-  ProductUnit({required this.onTap,required this.title});
+  final Function? onTap;
+  final String? title;
+  ProductUnit({ this.onTap, this.title});
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onTap(),
+      onTap: (){onTap;},
       child: Container(
         padding: EdgeInsets.only(left: 5),
         height: 25,

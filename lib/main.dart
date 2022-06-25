@@ -1,7 +1,15 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-
+import 'package:enviomarilandia/auth/sign_in.dart';
+import 'package:enviomarilandia/config/colors.dart';
+import 'package:enviomarilandia/providers/check_out_provider.dart';
+import 'package:enviomarilandia/providers/product_provider.dart';
+import 'package:enviomarilandia/providers/review_cart_provider.dart';
+import 'package:enviomarilandia/providers/user_provider.dart';
+import 'package:enviomarilandia/providers/wishlist_provider.dart';
+import 'package:enviomarilandia/telas/home/home_screen.dart';
+import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

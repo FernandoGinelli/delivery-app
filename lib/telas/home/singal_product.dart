@@ -11,6 +11,7 @@ class SingalProduct extends StatefulWidget {
   final Function? onTap;
   final String? productId;
   final ProductModel? productUnit;
+
   SingalProduct(
       {this.productId,
       this.productImage,
@@ -50,7 +51,9 @@ class _SingalProductState extends State<SingalProduct> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 GestureDetector(
-                  onTap: widget.onTap!(),
+                  onTap: () =>
+                    widget.onTap!()
+                  ,
                   child: Container(
                     height: 150,
                     padding: EdgeInsets.all(5),

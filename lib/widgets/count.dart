@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:enviomarilandia/comp/config/colors.dart';
-import 'package:enviomarilandia/comp/providers/review_cart_provider.dart';
+import 'package:enviomarilandia/config/colors.dart';
+import 'package:enviomarilandia/providers/review_cart_provider.dart';
 import 'package:provider/provider.dart';
 
 class Count extends StatefulWidget {

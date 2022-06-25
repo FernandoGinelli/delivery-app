@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:enviomarilandia/config/colors.dart';
 import 'package:enviomarilandia/providers/product_provider.dart';
 import 'package:enviomarilandia/providers/user_provider.dart';
-import 'package:enviomarilandia/screens/product_overview/product_overview.dart';
-import 'package:enviomarilandia/screens/home/singal_product.dart';
-import 'package:enviomarilandia/screens/review_cart/review_cart.dart';
-import 'package:enviomarilandia/screens/search/search.dart';
+import 'package:enviomarilandia/telas/product_overview/product_overview.dart';
+import 'package:enviomarilandia/telas/home/singal_product.dart';
+import 'package:enviomarilandia/telas/review_cart/review_cart.dart';
+import 'package:enviomarilandia/telas/search/search.dart';
 import 'package:provider/provider.dart';
 import 'drawer_side.dart';
 

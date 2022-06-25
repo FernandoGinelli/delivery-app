@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:enviomarilandia/comp/config/colors.dart';
-import 'package:enviomarilandia/comp/providers/review_cart_provider.dart';
-import 'package:enviomarilandia/comp/widgets/count.dart';
+import 'package:enviomarilandia/config/colors.dart';
+import 'package:enviomarilandia/providers/review_cart_provider.dart';
+import 'package:enviomarilandia/widgets/count.dart';
 import 'package:provider/provider.dart';
 
 class SingleItem extends StatefulWidget {
@@ -18,7 +18,7 @@ class SingleItem extends StatefulWidget {
   SingleItem(
       { this.productQuantity,
        this.productId,
-        required this.productUnit,
+         this.productUnit,
          this.onDelete,
          this.isBool,
          this.productImage,

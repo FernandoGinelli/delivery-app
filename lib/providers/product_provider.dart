@@ -1,11 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:enviomarilandia/comp/models/product_model.dart';
+import 'package:enviomarilandia/models/product_model.dart';
 
 class ProductProvider with ChangeNotifier {
-  late ProductModel productModel;
+   late  ProductModel productModel;
 
-  List<ProductModel> search = [];
+   final search = <ProductModel>[];
   productModels(QueryDocumentSnapshot element) {
     
     productModel = ProductModel(
@@ -13,7 +13,8 @@ class ProductProvider with ChangeNotifier {
       productName: element.get("productName"),
       productPrice: element.get("productPrice"),
       productId: element.get("productId"),
-      productUnit: element.get("productUnit"), productQuantity: null, 
+      productUnit: element.get("productUnit"),
+
     );
     search.add(productModel);
   }
@@ -24,16 +25,20 @@ class ProductProvider with ChangeNotifier {
   fatchHerbsProductData() async {
     List<ProductModel> newList = [];
 
-    QuerySnapshot value =
-        await FirebaseFirestore.instance.collection("HerbsProduct").get();
+    QuerySnapshot value = await FirebaseFirestore.instance.collection("Produtos").get();
+
 
     value.docs.forEach(
-      (element) {
+          (element) {
         productModels(element);
 
         newList.add(productModel);
       },
     );
+
+
+
+
     herbsProductList = newList;
     notifyListeners();
   }
@@ -50,14 +55,12 @@ class ProductProvider with ChangeNotifier {
     List<ProductModel> newList = [];
 
     QuerySnapshot value =
-        await FirebaseFirestore.instance.collection("FreshProduct").get();
+        await FirebaseFirestore.instance.collection("Produtos").get();
 
-    value.docs.forEach(
-      (element) {
+    for (var element in value.docs) {
         productModels(element);
         newList.add(productModel);
-      },
-    );
+      }
     freshProductList = newList;
     notifyListeners();
   }
@@ -74,14 +77,12 @@ class ProductProvider with ChangeNotifier {
     List<ProductModel> newList = [];
 
     QuerySnapshot value =
-        await FirebaseFirestore.instance.collection("RootProduct").get();
+        await FirebaseFirestore.instance.collection("Produtos").get();
 
-    value.docs.forEach(
-      (element) {
+    for (var element in value.docs) {
         productModels(element);
         newList.add(productModel);
-      },
-    );
+      }
     rootProductList = newList;
     notifyListeners();
   }

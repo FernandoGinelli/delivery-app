@@ -3,7 +3,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:enviomarilandia/config/colors.dart';
 import 'package:enviomarilandia/models/review_cart_model.dart';
 import 'package:enviomarilandia/providers/review_cart_provider.dart';
-import 'package:enviomarilandia/screens/check_out/delivery_details/delivery_details.dart';
+import 'package:enviomarilandia/telas/check_out/delivery_details/delivery_details.dart';
 import 'package:enviomarilandia/widgets/single_item.dart';
 import 'package:provider/provider.dart';
 
@@ -13,9 +13,9 @@ class ReviewCart extends StatelessWidget {
     // set up the buttons
     Widget cancelButton = FloatingActionButton(
       child: Text("No"),
-      onPressed: () {
-        Navigator.of(context).pop();
-      },
+      onPressed: () =>
+        Navigator.of(context).pop()
+      ,
     );
     Widget continueButton = FloatingActionButton(
       child: Text("Yes"),

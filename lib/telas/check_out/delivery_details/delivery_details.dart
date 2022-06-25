@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:enviomarilandia/config/colors.dart';
 import 'package:enviomarilandia/models/delivery_address_model.dart';
 import 'package:enviomarilandia/providers/check_out_provider.dart';
-import 'package:enviomarilandia/screens/check_out/add_delivery_address/add_delivery_address.dart';
-import 'package:enviomarilandia/screens/check_out/delivery_details/single_delivery_item.dart';
-import 'package:enviomarilandia/screens/check_out/payment_summary/payment_summary.dart';
+import 'package:enviomarilandia/telas/check_out/add_delivery_address/add_delivery_address.dart';
+import 'package:enviomarilandia/telas/check_out/delivery_details/single_delivery_item.dart';
+import 'package:enviomarilandia/telas/check_out/payment_summary/payment_summary.dart';
 import 'package:provider/provider.dart';
 
 class DeliveryDetails extends StatefulWidget {

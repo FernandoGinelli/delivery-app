@@ -2,8 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:enviomarilandia/comp/models/delivery_address_model.dart';
-import 'package:enviomarilandia/comp/models/review_cart_model.dart';
+import 'package:enviomarilandia/models/delivery_address_model.dart';
+import 'package:enviomarilandia/models/review_cart_model.dart';
 import 'package:location/location.dart';
 
 class CheckoutProvider with ChangeNotifier {

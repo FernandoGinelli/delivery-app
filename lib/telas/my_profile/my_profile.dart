@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:enviomarilandia/config/colors.dart';
 import 'package:enviomarilandia/models/user_model.dart';
 import 'package:enviomarilandia/providers/user_provider.dart';
-import 'package:enviomarilandia/screens/home/drawer_side.dart';
+import 'package:enviomarilandia/telas/home/drawer_side.dart';
 import 'package:provider/provider.dart';
 
 
