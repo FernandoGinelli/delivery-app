@@ -171,7 +171,7 @@ class _SingleItemState extends State<SingleItem> {
                           child: Column(
                             children: [
                               InkWell(
-                                onTap: widget.onDelete!(),
+                                onTap: (){widget.onDelete!;},
                                 child: Icon(
                                   Icons.delete,
                                   size: 30,

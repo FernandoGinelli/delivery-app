@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Herbs Seasonings'),
+              Text('Primeira Categoria'),
               GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(
@@ -89,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Fresh Fruits'),
+              Text('Segunda Categoria'),
               GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(
@@ -150,7 +150,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Root Vegetable'),
+              Text('Terceira Categoria'),
               GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(
@@ -228,7 +228,7 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           CircleAvatar(
             radius: 15,
-            backgroundColor: Color(0xffd6d382),
+            backgroundColor: textColor3.withOpacity(0.2),
             child: IconButton(
               onPressed: () {
                 Navigator.of(context).push(
@@ -256,7 +256,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 );
               },
               child: CircleAvatar(
-                backgroundColor: Color(0xffd6d382),
+                backgroundColor: textColor3.withOpacity(0.2),
                 radius: 15,
                 child: Icon(
                   Icons.shop,
@@ -278,7 +278,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 image: DecorationImage(
                   fit: BoxFit.cover,
                   image: NetworkImage(
-                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0Xg-k622Sbztlrb-L1o1CAla3zCbVc2lUw&usqp=CAU'),
+                      'http://www.meupositivo.com.br/doseujeito/wp-content/uploads/2017/09/faca-seus-fones-de-ouvido-durarem-mais.jpg'),
                 ),
                 color: Colors.red,
                 borderRadius: BorderRadius.circular(10),
@@ -305,7 +305,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                               child: Center(
                                 child: Text(
-                                  'Vegi',
+                                  'Envio',
                                   style: TextStyle(
                                     fontSize: 20,
                                     color: Colors.white,
@@ -324,15 +324,15 @@ class _HomeScreenState extends State<HomeScreen> {
                             '30% Off',
                             style: TextStyle(
                                 fontSize: 40,
-                                color: Colors.green[100],
+                                color: Colors.black,
                                 fontWeight: FontWeight.bold),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: Text(
-                              'On all vegetables products',
+                              'Em todos os Produtos',
                               style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                               ),
                             ),
                           ),

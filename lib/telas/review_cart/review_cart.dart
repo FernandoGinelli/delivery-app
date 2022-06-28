@@ -13,16 +13,17 @@ class ReviewCart extends StatelessWidget {
     // set up the buttons
     Widget cancelButton = FloatingActionButton(
       child: Text("No"),
-      onPressed: () =>
-        Navigator.of(context).pop()
-      ,
+      onPressed: () {
+        Navigator.of(context).pop();
+      }
     );
     Widget continueButton = FloatingActionButton(
       child: Text("Yes"),
-      onPressed: () {
+      onPressed: ()
+      {
         reviewCartProvider.reviewCartDataDelete(delete.cartId);
         Navigator.of(context).pop();
-      },
+      }
     );
 
     // set up the AlertDialog
