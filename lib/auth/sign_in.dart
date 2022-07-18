@@ -57,7 +57,7 @@ class _SignInState extends State<SignIn> {
         width: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-              fit: BoxFit.cover, image: AssetImage('assets/background.png')),
+              fit: BoxFit.cover, image: AssetImage('')),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -68,11 +68,11 @@ class _SignInState extends State<SignIn> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text('Sign in to contunue'),
+                  Text('Login para continuar'),
                   Text(
-                    'Vegi',
+                    'Envio',
                     style:
-                        TextStyle(fontSize: 50, color: Colors.white, shadows: [
+                        TextStyle(fontSize: 50, color: Colors.green.withOpacity(0.01), shadows: [
                       BoxShadow(
                         blurRadius: 5,
                         color: Colors.green.shade900,
@@ -104,14 +104,9 @@ class _SignInState extends State<SignIn> {
                   ),
                   Column(
                     children: [
+
                       Text(
-                        'By signing in you are agreeing to our',
-                        style: TextStyle(
-                          color: Colors.grey[800],
-                        ),
-                      ),
-                      Text(
-                        'Terms and Pricacy Policy',
+                        'Politica de privacidade',
                         style: TextStyle(
                           color: Colors.grey[800],
                         ),
